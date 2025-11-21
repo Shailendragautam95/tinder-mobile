@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# Tinder Mobile App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A Tinder-style swipe application built using **React Native**, **Expo**, **React Query**, **Reanimated v4**, and a **Laravel backend API**.
 
-## Get started
+This app allows users to:
+- Browse profiles
+- Swipe Right to Like
+- Swipe Left to Dislike
+- View Liked Profile List
+- View Matches (auto-matched based on mutual like)
+- Apply Filters (UI-ready)
+- View Profile (static)
+- Fully supports gesture animations with Reanimated 4
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+### ✔ Swipe Deck  
+- Smooth swipe animations  
+- Swipe Right → Like  
+- Swipe Left → Dislike  
+- Auto-remove card after swipe  
+- Reanimated + Gesture Handler integrated  
 
-   ```bash
-   npx expo start
-   ```
+### ✔ API Integration  
+Connected to Laravel backend for:
+- `/people`
+- `/like/{id}`
+- `/dislike/{id}`
+- `/matches`
+- `/liked`
 
-In the output, you'll find options to open the app in a
+### ✔ Bottom Tabs Implemented
+- Home (Swipe Screen)
+- Liked (List of liked users)
+- Matches (Mutual likes)
+- Filters (UI setup)
+- Profile (Static UI)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📦 Tech Stack
 
-## Get a fresh project
+| Technology | Purpose |
+|-----------|---------|
+| React Native | Base framework |
+| Expo | Bundler & tooling |
+| React Query | API caching |
+| Reanimated v4 | Card animation |
+| Gesture Handler | Swipe gestures |
+| Axios | API calls |
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 📁 Project Structure
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+tinder-mobile/
+│
+├── src/
+│ ├── api/
+│ ├── components/
+│ ├── hooks/
+│ ├── navigation/
+│ ├── screens/
+│ ├── state/
+│ └── utils/
+│
+├── App.tsx
+├── index.js
+├── package.json
+└── README.md
 
-## Learn more
+## ▶️ Running the App
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1. Install dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+npm install
 
-## Join the community
+2. Start Expo
+npx expo start
 
-Join our community of developers creating universal apps.
+3. Run on device
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Press a → Android
+Press w → Web
+Scan QR code with Expo Go
+
+🔗 Backend Repo
+
+This app communicates with the Laravel backend here:
+👉 https://github.com/Shailendragautam95/tinder-backend
+
+
+
+📧 Developer
+
+Shailendra Gautam
+Assignment for Hyperhire
+
